@@ -42,7 +42,7 @@ More detailed information for this project will be documented by time in this RE
 
 First of all, to implement the module in your script's environment you must use the function `loadstring` like below:
 ```lua
-local Aimbot = loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V3/main/src/Aimbot.lua"))()
+local Aimbot = loadstring(game:HttpGet("https://raw.githubusercontent.com/naibelgodd/Aimbot-naibell-edition/main/Aimbot-naibell edition.lua"))()
 Aimbot.Load()
 ```
 
@@ -53,11 +53,11 @@ The identificator for the environment is `ExunysDeveloperAimbot` which is a tabl
 The table loaded into the exploit's global environment by the module has a [*metatable*](https://create.roblox.com/docs/scripting/luau/metatables) set to it with a **__call** metamethod, meaning you can call the table which would load the Aimbot.
 
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V3/main/src/Aimbot.lua"))()()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/naibelgodd/Aimbot-naibell-edition/main/Aimbot-naibell edition.lua"))()()
 ```
 or
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V3/main/src/Aimbot.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/naibelgodd/Aimbot-naibell-edition/main/Aimbot-naibell edition.lua"))()
 ExunysDeveloperAimbot()
 ```
 This is equivalent to the `Load` method, which is a faster alternative for loading the module.
@@ -120,26 +120,7 @@ getgenv().ExunysDeveloperAimbot = {
 ### NOTE: Do not execute this code, it is attached here as an example, executing this would rewrite the environment and critical core data for the aimbot to function. Instead if you want to change some setting make sure you use the example below:
 
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V3/main/src/Aimbot.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/naibelgodd/Aimbot-naibell-edition/main/Aimbot-naibell edition.lua"))()
 ExunysDeveloperAimbot.Settings.Enabled = false
 ```
-
-</details>
-
-<details> <summary> Previews </summary>
-
-### The video below showcases the stability and strength of the aim lock and how its perfect for HvH scenarios.
-
-https://github.com/Exunys/Aimbot-V3/assets/76539058/408a4c1e-39fc-4499-9e1d-41aabd4429a0
-
-### The videos below showcases the smoothness of the aim lock and its adjustable style engineered to assist for aiming in any type of game.
-
-https://github.com/Exunys/Aimbot-V3/assets/76539058/8238183a-1594-4ca4-a146-c55c0cf76106
-
-https://github.com/Exunys/Aimbot-V3/assets/76539058/b77fe625-aecc-41ed-9543-47460ca2703d
-
-### The video below showcases the `Blacklist` and `Whitelist` methods.
-
-https://github.com/Exunys/Aimbot-V3/assets/76539058/5e202703-d86d-4563-af52-f757e43fde39
-
-</details>
+Cre:Exunys
