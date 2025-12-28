@@ -40,7 +40,7 @@ More detailed information for this project will be documented by time in this RE
 
 First of all, to implement the module in your script's environment you must use the function `loadstring` like below:
 ```lua
-local Aimbot = loadstring(game:HttpGet("https://raw.githubusercontent.com/naibelgodd/Aimbot-naibell-edition/main/scr/Aimbot-skibidi"))()
+local Aimbot = loadstring(game:HttpGet("https://raw.githubusercontent.com/naibelgodd/Aimbot-naibell-edition/main/scr/Aimbot.lua"))()
 Aimbot.Load()
 ```
 
@@ -51,11 +51,11 @@ The identificator for the environment is `NaibellDeveloperAimbot` which is a tab
 The table loaded into the exploit's global environment by the module has a [*metatable*](https://create.roblox.com/docs/scripting/luau/metatables) set to it with a **__call** metamethod, meaning you can call the table which would load the Aimbot.
 
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/naibelgodd/Aimbot-naibell-edition/main/scr/Aimbot-skibidi"))()()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/naibelgodd/Aimbot-naibell-edition/main/scr/Aimbot.lua"))()()
 ```
 or
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/naibelgodd/Aimbot-naibell-edition/main/scr/Aimbot-skibidi"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/naibelgodd/Aimbot-naibell-edition/main/scr/Aimbot.lua"))()
 NaibellDeveloperAimbot()
 ```
 This is equivalent to the `Load` method, which is a faster alternative for loading the module.
@@ -120,7 +120,7 @@ getgenv().NaibellDeveloperAimbot = {
 ### NOTE: Do not execute this code, it is attached here as an example, executing this would rewrite the environment and critical core data for the aimbot to function. Instead if you want to change some setting make sure you use the example below:
 
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/naibelgodd/Aimbot-naibell-edition/main/scr/Aimbot-skibidi"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/naibelgodd/Aimbot-naibell-edition/main/scr/Aimbot.lua"))()
 NaibellDeveloperAimbot.Settings.Enabled = false
 ```
 Cre:Exunys
