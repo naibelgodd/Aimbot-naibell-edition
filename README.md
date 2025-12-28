@@ -8,9 +8,7 @@ This project is currently in beta testing. Feel free to create pull requests (yo
 
 This module is used in [AirHub V2](https://github.com/Exunys/AirHub-V2). If you want to use it personally instead of integrating it for development purposes, I recommend using AirHub.
 
-### 📜 License
-This project is completely free and open source. However, that does not mean you own the rights to it. Please read this [document](https://github.com/Exunys/Aimbot-V3/blob/main/LICENSE) for more information.
-You can reuse or integrate this script or any system from this project into your own repositories, as long as you credit the developer, [Exunys](https://github.com/Exunys) (me).
+You can reuse or integrate this script or any system from this project into your own repositories, as long as you credit the developer, [naibelgodd](https://github.com/naibelgodd) (me).
 
 ### ❗ Notice
 This project has been written and tested with Synapse X and Electron. However, I will do my best to modularize support for every exploit. So far, the required functions for this module to run are listed below:
@@ -34,7 +32,7 @@ This project has been written and tested with Synapse X and Electron. However, I
 
 # 📋 Documentation
 
-### The documentation for the interactive methods of this module can be found by clicking [here](https://exunys.gitbook.io/aimbot-v3-documentation/).
+### The documentation for the interactive methods of this module can be found by clicking [here](https://.gitbook.io/aimbot-v3-documentation/).
 
 More detailed information for this project will be documented by time in this README.md document but mostly on the gitbook page.
 
@@ -42,35 +40,37 @@ More detailed information for this project will be documented by time in this RE
 
 First of all, to implement the module in your script's environment you must use the function `loadstring` like below:
 ```lua
-local Aimbot = loadstring(game:HttpGet("https://raw.githubusercontent.com/naibelgodd/Aimbot-naibell-edition/main/Aimbot-naibell edition.lua"))()
+local Aimbot = loadstring(game:HttpGet("https://raw.githubusercontent.com/naibelgodd/Aimbot-naibell-edition/main/scr/Aimbot-skibidi"))()
 Aimbot.Load()
 ```
 
 The code above loads the module's environment in your script executor's global environment meaning it will be achivable across every script.
 
-The identificator for the environment is `ExunysDeveloperAimbot` which is a table that has configurable settings and interactive methods.
+The identificator for the environment is `NaibellDeveloperAimbot` which is a table that has configurable settings and interactive methods.
 
 The table loaded into the exploit's global environment by the module has a [*metatable*](https://create.roblox.com/docs/scripting/luau/metatables) set to it with a **__call** metamethod, meaning you can call the table which would load the Aimbot.
 
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/naibelgodd/Aimbot-naibell-edition/main/Aimbot-naibell edition.lua"))()()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/naibelgodd/Aimbot-naibell-edition/main/scr/Aimbot-skibidi"))()()
 ```
 or
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/naibelgodd/Aimbot-naibell-edition/main/Aimbot-naibell edition.lua"))()
-ExunysDeveloperAimbot()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/naibelgodd/Aimbot-naibell-edition/main/scr/Aimbot-skibidi"))()
+NaibellDeveloperAimbot()
 ```
 This is equivalent to the `Load` method, which is a faster alternative for loading the module.
 ```lua
-ExunysDeveloperAimbot.Load()
+NaibellDeveloperAimbot.Load()
 ```
 
 This module has customizable settings and other miscellaneous properties. You can see the configurable settings below.
 
+Cre:Exuny?
+
 <details> <summary> The module's configurable settings </summary>
 
 ```lua
-getgenv().ExunysDeveloperAimbot = {
+getgenv().NaibellDeveloperAimbot = {
 	DeveloperSettings = {
 		UpdateMode = "RenderStepped",
 		TeamCheckOption = "TeamColor",
@@ -120,7 +120,7 @@ getgenv().ExunysDeveloperAimbot = {
 ### NOTE: Do not execute this code, it is attached here as an example, executing this would rewrite the environment and critical core data for the aimbot to function. Instead if you want to change some setting make sure you use the example below:
 
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/naibelgodd/Aimbot-naibell-edition/main/Aimbot-naibell edition.lua"))()
-ExunysDeveloperAimbot.Settings.Enabled = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/naibelgodd/Aimbot-naibell-edition/main/scr/Aimbot-skibidi"))()
+NaibellDeveloperAimbot.Settings.Enabled = false
 ```
 Cre:Exunys
